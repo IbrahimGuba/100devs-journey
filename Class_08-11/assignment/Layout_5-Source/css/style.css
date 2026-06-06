@@ -1,0 +1,93 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  background-color: #F5F9FC;
+  overflow: auto; /* Clearfix - contains floated elements */
+}
+
+nav * {
+  color: #2A4054;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Logo - left section */
+nav .logo {
+  float: left;
+  padding: 10px 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Links - center section */
+nav .nav-links {
+  float: left;
+  width: calc(100% - 300px); 
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav .nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav .nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Button - right section */
+nav .btn {
+  float: right;
+  padding: 10px 20px;
+}
+
+.btn a {
+  background-color: #2A4054;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
