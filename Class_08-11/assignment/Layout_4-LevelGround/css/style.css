@@ -1,6 +1,8 @@
 /* Box Model Hack */
-* {
+*,*::before, *::after  {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Clear fix hack */
@@ -20,21 +22,156 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+:root {
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Lato', sans-serif;
+}
 
 body {
-
+    font-family: 'Source Sans 3', sans-serif;
+    color: #222;
+    background: #fff;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header,.hero {
+  background-color: #66768A;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-footer {
+nav {
+  height: 52px;
+  position: relative;
+}
 
+nav .navLeft {
+  float: left;
+}
+
+nav .navLeft li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav .navLeft a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+}
+
+.btn {
+  float: right;
+}
+
+.hero, .why, .visit, .volunteer{
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5,.btn, nav a, .cta {
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+}
+
+body, p, h6{
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+.btn {
+  background-color: #fff;
+  color: #66768A;
+  padding: 10px 20px;
+  border-radius: 5px;
+  float: right;
+  width: auto;
+  margin-right: 10px;
+}
+
+
+
+main > section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.why {
+  background-color: #fff;
+  color: #000;
+  padding :10px;
+}
+
+.visit {
+  background-color: #DBDFE2;
+  color: #000;
+  height: 500px;
+  padding: 70px 40px;
+}
+
+.visitGym {
+  float: left;
+  width: 50%;
+ 
+}
+
+
+.visitYou {
+  
+  float: left;
+  width: 50%;
+}
+
+.cta {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #161F2A;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a{
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+h5 {
+  color: #5E6E81;
+  font-size: .75rem;
+}
+
+h6 {
+  font-family: 1rem;
 }
 
 /******************************************
