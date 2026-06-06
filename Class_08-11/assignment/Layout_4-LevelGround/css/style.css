@@ -1,8 +1,8 @@
 /* Box Model Hack */
 *,*::before, *::after  {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+
 }
 
 /* Clear fix hack */
@@ -89,6 +89,7 @@ body, p, h6{
   font-size: 1.15rem;
 }
 
+
 .btn {
   background-color: #fff;
   color: #66768A;
@@ -116,37 +117,53 @@ main > section a {
 .visit {
   background-color: #DBDFE2;
   color: #000;
-  height: 500px;
   padding: 70px 40px;
 }
-
+ 
 .visitGym {
   float: left;
-  width: 50%;
+  width: 47%;
+  text-align: center;
+  margin-right: 6%;
+}
  
-}
-
-
 .visitYou {
-  
   float: left;
-  width: 50%;
+  width: 47%;
+  text-align: center;
 }
-
+ 
+.card-image {
+  background: #8a9aac;
+  width: 100%;
+  padding-top: 68%;
+  margin-bottom: 22px;
+}
+ 
+.visitGym h3,
+.visitYou h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+ 
+.visitGym p,
+.visitYou p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 28px;
+}
+ 
 .cta {
-  padding: 10px 20px;
-  border: 2px solid #000;
-  background-color: transparent;
-  color: #000;
+  display: inline-block;
+  border: 2px solid #222;
+  padding: 10px 28px;
+  font-size: 12px;
+  letter-spacing: 2px;
   text-decoration: none;
+  color: #222;
 }
-
-
-
-
-
-
-
 
 
 footer {
