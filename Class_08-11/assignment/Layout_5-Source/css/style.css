@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Clear fix hack */
@@ -83,6 +84,76 @@ nav .btn {
   font-weight: 600;
   display: inline-block;
 }
+
+
+.hero {
+  text-align: center;
+  background-color: #F5F9FC;
+  overflow: auto; /* Clearfix - contains floated children */
+}
+
+
+.left-hero {
+  float: left;
+  width: 50%;
+  background-color: #F5F9FC;  
+  padding: 100px;
+}
+
+.right-hero img {
+  float: right;
+  width: 50%;
+}
+
+
+span {
+  text-align: start;
+  color: #2A4054;
+  font-weight: 700;
+  float: left;
+}
+
+h1 {
+  font-size: 48px;
+  color: #2A4054;
+  text-align:start;
+}
+
+.box {
+  float: left;
+}
+
+.placeholder {
+  display: inline-block;
+  background-color: #E1E9F0;
+  padding: 10px 20px;
+  width: 300px;
+  text-align: start;
+  color: #2A4054;
+  font-weight: 100;
+}
+
+.placeholder + .btn {
+  display: inline-block;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+p {
+  text-align: start;
+  color: #2A4054;
+  font-size: 1.25rem;
+  padding: 10px 20px 10px 0;
+}
+
+
+
+
+
+
+
 
 footer {
 
