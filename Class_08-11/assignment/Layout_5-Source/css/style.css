@@ -148,12 +148,44 @@ p {
   padding: 10px 20px 10px 0;
 }
 
+.cards {
+  background-color: #F5F9FC;
+  margin-top: 0;
+  overflow: auto;
+  padding-left: 100px;
+}
 
+.card__items {
+  float: left;
+  width: 25%;  /* 4 cards per row: 100% / 4 = 25% */
+  padding: 20px;
+  box-sizing: border-box; /* Prevents padding from breaking width */
+  
+}
 
+.card__container {
+  overflow: auto;
+  width: 100%;
+}
 
+.cards h3, a {
+  text-decoration: none;
+  font-weight: 600;
+  color:#2A4054
+}
 
+main + section h2{
+  color:#2A4054;
+  font-size: 48px;
+  padding-left: 100px;
+}
 
-
+main + section p{
+  color:#bbc6d1;
+  font-size: 18px;
+  padding-left: 100px;
+  margin-top: -20px;
+}
 
 footer {
 
