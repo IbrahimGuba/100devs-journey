@@ -6,7 +6,7 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
+     content: "";
      display: block;
      clear: both;
      visibility: hidden;
@@ -23,174 +23,301 @@
 /*******************************************/
 
 body {
-
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5F9FC;
+    color: #2A4054;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* ======================== NavBar ============================== */
+
+header {
+    background: #F5F9FC;
+}
+
 nav {
-  background-color: #F5F9FC;
-  overflow: auto; /* Clearfix - contains floated elements */
+    overflow: auto;
+    padding: 25px 0;
 }
 
-nav * {
-  color: #2A4054;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Open Sans', sans-serif;
+.mobile-menu {
+  display: none;
 }
 
-/* Logo - left section */
-nav .logo {
-  float: left;
-  padding: 10px 20px;
+.logo {
+    float: left;
 }
 
 .logo a {
-  font-size: 24px;
-  font-weight: 600;
+    text-decoration: none;
+    color: #2A4054;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-/* Links - center section */
-nav .nav-links {
-  float: left;
-  width: calc(100% - 300px); 
-  text-align: center;
-  padding: 15px 0;
+.nav-links {
+    float: left;
+    width: calc(100% - 260px);
+    text-align: center;
+    margin-top: 10px;
 }
 
-nav .nav-links li {
-  display: inline-block;
-  margin: 0 15px;
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
 }
 
-nav .nav-links a {
-  font-size: 14px;
-  font-weight: 500;
+.nav-links a {
+    text-decoration: none;
+    color: #2A4054;
+    font-size: 14px;
 }
 
-/* Button - right section */
-nav .btn {
-  float: right;
-  padding: 10px 20px;
+.btn {
+    float: right;
 }
 
 .btn a {
-  background-color: #2A4054;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: 600;
-  display: inline-block;
+    text-decoration: none;
+    background: #2A4054;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
 }
 
-
+/* ======================== Hero Section ============================== */
 .hero {
-  text-align: center;
-  background-color: #F5F9FC;
-  overflow: auto; /* Clearfix - contains floated children */
+    overflow: auto;
+    padding: 80px 0;
 }
 
-
+/* LEFT COLUMN */
 .left-hero {
-  float: left;
-  width: 50%;
-  background-color: #F5F9FC;  
-  padding: 100px;
+    float: left;
+    width: 50%;
 }
 
-.right-hero img {
-  float: right;
-  width: 50%;
+.hero-inner {
+    max-width: 520px;
 }
 
-
-span {
-  text-align: start;
-  color: #2A4054;
-  font-weight: 700;
-  float: left;
+.hero-inner span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #8A9AAD;
+    margin-bottom: 20px;
+}
+.hero-inner h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 48px;
-  color: #2A4054;
-  text-align:start;
-}
-
+/* Search/button row */
 .box {
-  float: left;
+    overflow: auto;
+    margin-bottom: 30px;
 }
 
 .placeholder {
-  display: inline-block;
-  background-color: #E1E9F0;
-  padding: 10px 20px;
-  width: 300px;
-  text-align: start;
-  color: #2A4054;
-  font-weight: 100;
+    float: left;
+    width: 320px;
+    padding: 10px;
+    background: #E5ECF2;
+    color: #8A9AAD;
 }
 
-.placeholder + .btn {
-  display: inline-block;
+.box .btn {
+    float: left;
 }
 
-.btn a {
-  text-decoration: none;
+.hero-inner p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #66788A;
 }
 
-p {
-  text-align: start;
-  color: #2A4054;
-  font-size: 1.25rem;
-  padding: 10px 20px 10px 0;
+/* RIGHT COLUMN */
+.right-hero {
+    float: right;
+    width: 50%;
+    text-align: center;
+    overflow: visible;
 }
 
+.right-hero img {
+  height: 540px;
+  width: 135%;
+  max-width:none;
+}
+
+/* ======================== Cards Section ============================== */
 .cards {
-  background-color: #F5F9FC;
-  margin-top: 0;
-  overflow: auto;
-  padding-left: 100px;
+    overflow: auto;
+    padding: 40px 0 80px;
 }
 
 .card__items {
-  float: left;
-  width: 25%;  /* 4 cards per row: 100% / 4 = 25% */
-  padding: 20px;
-  box-sizing: border-box; /* Prevents padding from breaking width */
-  
+    float: left;
+    width: 25%;
+
+    /*
+       NEW:
+       Gives breathing room inside cards.
+    */
+    padding: 20px;
 }
 
-.card__container {
-  overflow: auto;
-  width: 100%;
+/*
+   Placeholder icon.
+*/
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #2A4054;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.cards h3, a {
-  text-decoration: none;
-  font-weight: 600;
-  color:#2A4054
+.card__items h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
-main + section h2{
-  color:#2A4054;
-  font-size: 48px;
-  padding-left: 100px;
+.card__items p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #66788A;
+    margin-bottom: 20px;
 }
 
-main + section p{
-  color:#bbc6d1;
-  font-size: 18px;
-  padding-left: 100px;
-  margin-top: -20px;
+.card__items a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2A4054;
 }
 
-footer {
+/* ======================== Info Section ============================== */
+.info {
+    background: white;
+    padding: 100px 0;
+}
 
+.info-copy {
+    max-width: 650px;
+}
+
+.info h2 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #8A9AAD;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 800px) {
+  .logo, .nav-links, .hero{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links, .left-hero, .right-hero {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+    float: left;
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  
+  .nav-links, nav > .btn {
+    display: none;
+  }
+
+  nav {
+    border-bottom: 3px solid #E5ECF2;;
+  }
+
+  .nav-links li {
+      display: block;
+      margin: 15px 0;
+    }
+
+  .btn {
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-inner {
+    text-align: left;
+    max-width: none;
+  }
+  .left-hero, .right-hero {
+    float: none;
+    width: 100%;
+  }
+
+ .placeholder {
+  width: 100%;
+  float: none;
+ }
+
+  .box .btn {
+    float: none;
+    width: 100%;
+  }
+
+   .box .btn a{
+    display: block;
+  }
+
+  .right-hero img {
+    height: auto;
+    width: 100%;
+  }
+
+ .card__items {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hero-inner h1 {
+    font-size: 42px;
+  }
+
+  .info-copy h2 {
+    font-size: 36px;
+  }
+
+
+}
