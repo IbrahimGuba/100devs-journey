@@ -181,15 +181,10 @@ nav {
     padding: 20px;
 }
 
-/*
-   Placeholder icon.
-*/
 .icon {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #2A4054;
-    border-radius: 50%;
     margin-bottom: 20px;
+    font-size: 32px;
+    color: #2A4054;
 }
 
 .card__items h3 {

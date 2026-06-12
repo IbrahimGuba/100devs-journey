@@ -1,0 +1,103 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: "";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+ 
+}
+
+/* ======================== Navbar ============================== */
+
+nav {
+  overflow: auto;
+  width: 100%;
+}
+.logo {
+  float: left;
+}
+
+.nav-links {
+  float: right;
+  width: 70%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2A4054;
+}
+
+.nav-icons{ 
+  float: right;
+  width: 20%;
+}
+
+/* ======================== Hero Section ============================== */
+
+.hero {
+  background-image:url(../images/hero-bg.jpg) ;
+}
+
+h1, h2 {
+  font-size: 4rem;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search {
+  padding: 10px 20px;
+  width: 480px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  background: #ff8800;
+  border-radius: 0 5px 5px 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
