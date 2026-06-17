@@ -25,19 +25,39 @@ body {
 
 }
 
+/* Reusable Page alignment */
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h3 {
   font-family:'Times New Roman', Times, serif;
   font-weight: 700;
 }
 
+/* Centered h2 */
+h2 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
 p, a, span {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centered Span */
+.highlight {  
+  padding-top: 60px;      
+  color: #ff8800;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  display: block;
 }
 
 /******************************************
@@ -87,7 +107,7 @@ nav {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: left;
 }
 
@@ -160,8 +180,8 @@ form .btn:hover {
   font-size: 20px;
 }
 
-h2 {
-  font-size: 3.5rem;
+h3 {
+  font-size: 4rem;
 }
 
 .about-us .first, 
@@ -190,13 +210,51 @@ h2 {
   display: inline-block;
   background-color:#ffaa4d;
   padding: 15px;
-  /* border-radius: 0 5px 5px 0; */
 }
 
 .about-us .btn-text {
   display: inline-block;
   padding: 15px 20px;
 }
+
+/* ======================== Menu Section ============================== */
+.menu {
+  background-color: #f2f6f7;
+}
+
+.menu-categories {
+  float: right;
+  width: 75%;
+  padding: 20px;
+  
+}
+
+.menu-categories li {
+  display: inline-block;
+  padding: 10px 30px;
+  list-style: none;
+  border-bottom: 2px solid #e1e5e6;
+}
+
+.menu-categories a {
+  text-decoration: none;
+  color: #2A4054;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-gallery img{
+  float: left;
+  width: 12.5%;
+}
+
+.menu-images img {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
