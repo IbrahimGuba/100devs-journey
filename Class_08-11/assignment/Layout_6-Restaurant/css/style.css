@@ -65,7 +65,6 @@ p, a, span {
 /*******************************************/
 
 /* ======================== Navbar & Hero ============================== */
-
 nav {
   overflow: auto;
   width: 100%;
@@ -93,13 +92,12 @@ nav {
   color: #2A4054;
 }
 
-
 .new-hero {
   background-image:url(../images/hero-bg.jpg);
   background-size: cover;
   min-height: 500px; 
   background-repeat: no-repeat;
-  padding: 0 0 550px 0;
+  padding: 0 0 250px 0;
 }
 
 h1 {
@@ -343,7 +341,7 @@ h3 {
 
 .page-dots {
   text-align: center;
-  padding: 20px; 
+  padding: 30px; 
 }
 
 .page-dots button {
@@ -364,6 +362,141 @@ h3 {
   border-radius: 50%;
   background-color: #ff8800;
 }
+
+/* ======================== Opening Hours Section ============================== */
+.opening-hours {
+  background: #f8f8f8;
+  text-align: center;
+  position: relative;
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  font-size: 30px;
+  color: orange;
+  margin: 40px 0 10px 0;
+}
+
+.phone-box p {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.phone-box h3 {
+  color:#ff8800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.phone-box h3 {
+  color:#ff8800;
+  font-size: 2rem;
+}
+
+.schedule-wrapper {
+  width: 75%;
+  margin: 40px auto 60px;
+}
+
+.schedule-left {
+  float: left;
+  width: 50%;
+}
+
+.schedule-right {
+  float: right;
+  width: 50%;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.image-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.left-btn {
+  float: left;
+  width: 5%;
+}
+
+.right-btn {
+  float: right;
+  width: 5%;
+}
+
+.food-image {
+  float: left;
+  width: 90%;
+  position: relative;
+}
+
+.food-image img {
+  object-fit: cover;
+  width: 800px;
+  height: 400px;
+  object-position: 70% 80%;
+}
+
+.left-btn,
+.right-btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f9a826;
+  border-radius: 50%;
+  color: #f9a826;
+  background: rgba(0, 0, 0, 0.25%);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.left-btn {
+  float: left;
+  margin-top: 180px;
+}
+
+.right-btn {
+  float: right;
+  margin-top: 180px;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+  background: #f9a826;
+  color: white;
+}
+
+.play-btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f9a826;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    color: #f9a826;
+    font-size: 28px;
+    text-align: center;
+    line-height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-btn:hover {
+  background: #f9a826;
+  color:white;
+}
+/* ======================== Testimonials Section ============================== */
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
