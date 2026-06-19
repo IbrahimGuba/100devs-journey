@@ -30,8 +30,8 @@
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Location</a></li>
 
-							<li class="nav-icons"><a href="#" class="cart">C</a></li>
-							<li class="nav-icons"><a href="#" class="search">S</a></li>
+							<li class="nav-icons"><a href="#" class="fa-solid fa-cart-shopping"></a></li>
+							<li class="nav-icons"><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
 						</ul>
 						</div>
 					</div>
@@ -48,7 +48,9 @@
 							</h1>
 							<form class="clearfix">
 								<input type="search" class="search" placeholder="Search here">
-								<a href="#" class="btn">Location <i class="fa-solid fa-chevron-down"></i></a>
+								<button type="submit" class="btn">
+									Location <i class="fa-solid fa-chevron-down"></i>
+								</button>
 							</form>
 							<div class="socials">
 								<i class="fa-brands fa-facebook-f"></i>
@@ -90,13 +92,13 @@
 
 			<section class="menu">
 				<div class="container">
-					<div menu-content>
+					<div class = "menu-content">
 						<span class="highlight"> Order Online Now </span>
-						<h2> Our Specialty Cuisine </h1>
+						<h2> Our Specialty Cuisine </h2>
 						
 						<div class="menu-categories">
 							<ul>
-								<li><a href="#breakfast"> Breakfast </a></li>
+								<li class="active"><a href="#breakfast"> Breakfast </a></li>
 								<li><a href="#Lunch"> Lunch </a></li>
 								<li><a href="#Dinner"> Dinner </a></li>
 								<li><a href="#Dessert"> Dessert </a></li>
@@ -104,29 +106,61 @@
 							</ul>
 						</div>
 
-						<div class="menu-gallery clearfix">
-							<div class="menu-images">
-								<img src="images/maddi-bazzocco-food1.jpg"> 
+						<div class="menu-grid clearfix">
+							<article class="menu-card featured">
+								<img src="images/maddi-bazzocco-food1.jpg" alt="Pasta dish">
+
+								<div class="item-info">
+									<span class="price">$14.99</span>
+
+									<div class="rating">
+										★★★★★
+									</div>
+
+									<h3>Contadina</h3>
+
+									<button class="order-now">Order Now</button>
+								</div>
+							</article>
+
+							<article class="menu-card">
 								<img src="images/maddi-food2jpg.jpg"> 
+							</article>
+
+							<article class="menu-card">
 								<img src="images/maddi-bazzocco-food3.jpg"> 
+							</article>
+
+							<article class="menu-card">
 								<img src="images/ben-kolde-food4.jpg"> 
-								<img src="images/maddi-bazzocco-food1.jpg"> 
+							</article>
+
+							<article class="menu-card">
+								<img src="images/food5.png"> 
+							</article>
+
+							<article class="menu-card">
 								<img src="images/carissa-gan-food6.jpg"> 
+							</article>
+
+							<article class="menu-card">
 								<img src="images/melissa-walker-food7.jpg"> 
+							</article>
+
+							<article class="menu-card">
 								<img src="images/davide-cantelli-food8.jpg"> 
-							</div>
+							</article>
+
 						</div>
 
-						<div class="page-circles">
-							<ul>
-								<li></li>
-								<li></li>
+						<div class="page-dots">
+							<button class="dot"></button>
+							<button class="dot"></button>
+							
+							<button class="dot active"></button>
 
-								<li class="big-circle"></li>
-
-								<li></li>
-								<li></li>
-							</ul>
+							<button class="dot"></button>
+							<button class="dot"></button>
 						</div>
 					</div>
 				</div>
