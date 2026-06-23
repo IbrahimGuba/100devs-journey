@@ -25,18 +25,174 @@ body {
 
 }
 
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+/* ======================== Navbar ============================== */
+nav {
+  width: 100%;
+  overflow: auto;
+  font-weight: 500;
+}
+
+.logo {
+  float: left;
+  width: 15%;
+}
+
+.nav-links {
+  float: left;
+  width: 70%;
+  text-align: center;
+  
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.book-btn a {
+  float: right;
+  width: 15%;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  
+}
+
+/* ======================== Hero ============================== */
+.hero {
+  background: url(../images/hero-image.jpg);
+  background-size: cover;
+  height: 800px; 
 
 }
 
-footer {
-
+.hero-content {
+  padding: 150px 0 0 100px;
 }
 
+h1 {
+  font-size: 12ch;
+  margin: 0;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1.25rem;
+  margin: 20px 0 20px 0;
+  padding: 0;
+}
+
+.btn {
+  padding: 15px 20px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  
+}
+
+.discount-box {
+  position: absolute;
+  bottom: 80px;
+  left: 220px;
+  right: ;
+  background: black;
+  color: white;
+}
+
+.arrows {
+  float: right;
+  margin-top: 300px ;
+}
+
+/* ======================== Features Section ============================== */
+.features {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.feature {
+  float: left;
+  width: 33.333%;
+  padding: 10px;
+}
+
+.feature p {
+  max-width: 50ch;
+  color: black;
+}
+
+/* ======================== Promo Section ============================== */
+.promo {
+  background: #f3f4f6;
+  width: 100%;
+}
+
+.promo-content {
+  padding: 40px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.promo-text {
+  float: left;
+  width: 50%;
+  color: black;
+  text-align: left ;
+  max-width: 60ch;
+}
+
+.promo-text p {
+  color: black;
+  max-width: 45ch;
+}
+
+.promo-image {
+  float: right;
+  width: 50%;
+  height: 400px;
+  background: url(../images/Home3-Video.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.promo-image img {
+  
+}
+
+.play-btn {
+  /* width: 60px;
+  height: 60px; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
