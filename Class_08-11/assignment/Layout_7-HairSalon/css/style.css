@@ -179,20 +179,106 @@ h2 {
   position: relative;
 }
 
-.promo-image img {
-  
-}
-
 .play-btn {
-  /* width: 60px;
-  height: 60px; */
-
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
+
+
+/* ======================== Experts Section (Practice Flexbox) ============================== */
+.experts {
+  padding: 100px 0;
+}
+
+.experts-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expert-card {
+  width: 30%;
+  position: relative;
+}
+
+.expert-card img {
+  width: 100%;
+  display: block;
+}
+
+.expert-info {
+  width: 80%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px 3%;
+
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+
+  transform: translateX(-50%);
+}
+
+/* ======================== Promo Section ============================== */
+.offer{
+  margin: 100px 0;
+  padding: 20;
+}
+
+.offer-content {
+  background: url(../images/Promo-Banner-Image.jpg);
+  background-size: cover;
+  height: 550px;
+  padding: 90px;
+}
+
+.offer-content h3 {
+  font-size: 1.75rem;
+  color: black;
+}
+
+.offer-content span {
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.offer-content p {
+ color: black;
+ font-size: 3rem;
+}
+
+.offer-btn {
+  padding: 1em 2em;
+  margin-top: 200px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+/* ======================== Lookbook Section ============================== */
+.lookbook {
+  margin: 100px 0;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.heading h2 {
+   border-bottom: 2px solid black;
+   margin: 20px
+}
+
+.column {
+  float: left;
+  width: 33.333%;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
