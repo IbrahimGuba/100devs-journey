@@ -5,7 +5,7 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
+     content: "";
      display: block;
      clear: both;
      visibility: hidden;
@@ -22,7 +22,10 @@
 /*******************************************/
 
 body {
-
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 
 .container {
@@ -38,107 +41,196 @@ body {
 /* ======================== Navbar ============================== */
 nav {
   width: 100%;
-  overflow: auto;
-  font-weight: 500;
+  padding: 18px 0;
+  
 }
 
 .logo {
   float: left;
   width: 15%;
+  line-height: 1;    
+}
+
+.logo img {
+  max-height: 40px;
+  width: auto;
 }
 
 .nav-links {
   float: left;
   width: 70%;
   text-align: center;
-  
+  padding-top: 6px; 
 }
 
 .nav-links li {
   display: inline-block;
-  padding: 0 20px;
+  margin: 0 14px;
   list-style: none;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
+  font-size: 0.75rem;    
+  letter-spacing: 0.08em;
+  font-weight: 500;
 }
 
-.book-btn a {
+.book-btn {
   float: right;
   width: 15%;
+  text-align: right;
+  padding-top: 8px;
+}
+
+a.book-btn {
+  width: auto;
   padding: 15px 20px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
   text-decoration: none;
   color: black;
-  text-align: center;
-  
 }
 
 /* ======================== Hero ============================== */
 .hero {
   background: url(../images/hero-image.jpg);
   background-size: cover;
-  height: 800px; 
+  width: 100%;
+  height: 950px; 
+  position: relative;
+}
 
+.hero .container {
+  height: 100%;
+  position: relative;
 }
 
 .hero-content {
-  padding: 150px 0 0 100px;
+ padding-top: 160px;
+ padding-left: 40px; 
 }
 
 h1 {
-  font-size: 12ch;
+  font-size: 5.5rem;
+  line-height: 1;
   margin: 0;
+  font-weight: 700;
   color: white;
 }
 
-p {
+.hero-content p {
   color: white;
-  font-size: 1.25rem;
-  margin: 20px 0 20px 0;
-  padding: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  margin: 16px 0 20px;
+  padding: 20px 0;
 }
 
-.btn {
+.btn-1 {
   padding: 15px 20px;
   background: black;
   color: white;
-  font-size: 1em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  
 }
 
 .discount-box {
   position: absolute;
-  bottom: 80px;
-  left: 220px;
-  right: ;
+  bottom: 60px;
+  left: 40px;            
   background: black;
   color: white;
+  padding: 50px 40px;
+  width: 260px;
+}
+
+.discount-box h3 {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 10px;
+  font-weight: 400;
+  color: white;
+
+}
+
+.discount-box p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 0 40px;
+}
+
+.discount-box p span {
+  padding-right: 2px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-2 {
+  padding: 15px 20px;
+  background: white;
+  color: black;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
 .arrows {
-  float: right;
-  margin-top: 300px ;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  display: flex;
+  gap: 6px;
+}
+
+.left-btn, .right-btn {
+  background: white;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  
 }
 
 /* ======================== Features Section ============================== */
 .features {
   width: 100%;
-  margin-top: 2rem;
+  padding: 70px 0 60px;
   text-align: center;
 }
 
 .feature {
   float: left;
   width: 33.333%;
-  padding: 10px;
+  padding: 0 40px;
+}
+
+.feature img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.feature h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  margin: 0 0 14px;
+  text-transform: uppercase;
 }
 
 .feature p {
-  max-width: 50ch;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 45ch;
   color: black;
+  margin: 0 auto; 
 }
 
 /* ======================== Promo Section ============================== */
@@ -148,25 +240,31 @@ p {
 }
 
 .promo-content {
-  padding: 40px;
   width: 100%;
-}
-
-h2 {
-  font-size: 3rem;
+  overflow: hidden;
 }
 
 .promo-text {
   float: left;
   width: 50%;
+  padding: 70px 60px 70px 40px;
   color: black;
-  text-align: left ;
-  max-width: 60ch;
+}
+
+.promo-text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  line-height: 1.1;
 }
 
 .promo-text p {
-  color: black;
-  max-width: 45ch;
+  font-size: 0.88rem;
+  line-height: 1.8;
+  max-width: 44ch;
+  margin: 0 0 24px;
 }
 
 .promo-image {
@@ -177,6 +275,8 @@ h2 {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px; 
 }
 
 .play-btn {
@@ -189,16 +289,17 @@ h2 {
 
 /* ======================== Experts Section (Practice Flexbox) ============================== */
 .experts {
-  padding: 100px 0;
+  padding: 80px 0 100px;
 }
 
 .experts-row {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .expert-card {
-  width: 30%;
+  flex: 1;               /* equal-width columns */
   position: relative;
 }
 
@@ -212,7 +313,7 @@ h2 {
   background: black;
   color: white;
   text-align: center;
-  padding: 10px 3%;
+  padding: 10px 5%;
 
   position: absolute;
   left: 50%;
@@ -221,21 +322,37 @@ h2 {
   transform: translateX(-50%);
 }
 
+.expert-info h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: white;
+}
+
+.expert-info span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: grey;
+}
+
 /* ======================== Promo Section ============================== */
 .offer{
-  margin: 100px 0;
-  padding: 20;
+  margin: 60px 0;
 }
 
 .offer-content {
   background: url(../images/Promo-Banner-Image.jpg);
   background-size: cover;
   height: 550px;
-  padding: 90px;
+  padding: 80px 90px;
 }
 
 .offer-content h3 {
-  font-size: 1.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 30px;
+  font-weight: 500;
   color: black;
 }
 
@@ -247,7 +364,10 @@ h2 {
 
 .offer-content p {
  color: black;
- font-size: 3rem;
+ font-size: 2.8rem;
+ font-weight: 500;
+ line-height: 1.15;
+ margin: 0 0 40px;
 }
 
 .offer-btn {
@@ -256,27 +376,43 @@ h2 {
   background-color: black;
   color: white;
   text-decoration: none;
+  margin-top: 30px;
 }
 
 /* ======================== Lookbook Section ============================== */
 .lookbook {
-  margin: 100px 0;
+  padding: 60px 0 100px;
 }
 
 .heading {
   text-align: center;
-  padding: 20px;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 .heading h2 {
-   border-bottom: 2px solid black;
-   margin: 20px
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 .column {
   float: left;
   width: 33.333%;
+  padding: 0 6px;
+}
+
+.column img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.darkscaled {
+  filter: brightness(0.5);
 }
 
 /******************************************
