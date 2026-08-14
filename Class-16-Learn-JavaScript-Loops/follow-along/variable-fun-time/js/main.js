@@ -16,7 +16,7 @@ console.log(funVariable);
 // userInput = userInput + 25
 
 //alert that number
-// alert(userInput)
+// git 
 
 //--- Hard
 //create a variable that holds the h1
@@ -30,3 +30,9 @@ function sum() {
     let userInput = document.querySelector("#danceDanceRevolution").value
     console.log(funVariable + Number(userInput))
 }
+
+let input = prompt("Enter a your temperture in celsius: ")
+let temp = Number(input)
+
+let faren = temp * 9/5 + 32
+console.log(faren)
