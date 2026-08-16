@@ -1,6 +1,7 @@
 // *Variables*
 // Create a variable and console log the value
-
+let randomVariable = "A Variable says Howdy"
+console.log(randomVariable)
 
 // Create a variable, add 10 to it, and alert the value
 
