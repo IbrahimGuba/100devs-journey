@@ -2,26 +2,26 @@
 
 let day = prompt("Give a day of the week and i'll give you the next!")
 
-if (day === "monday") {
+if (day.toLowerCase() === "monday") {
     console.log("The next day is tuesday")
 }
-else if (day === "tuesday") {
+else if (day.toLowerCase() === "tuesday") {
     console.log("The next day is wednesday")
 }
-else if (day === "wednesday") {
+else if (day.toLowerCase() === "wednesday") {
     console.log("The next day is thursday")
 }
-else if (day === "thursday") {
+else if (day.toLowerCase() === "thursday") {
     console.log("The next day is friday")
 }
-else if (day === "friday") {
+else if (day.toLowerCase() === "friday") {
     console.log("The next day is saturday")
 }
-else if (day === "saturday") {
+else if (day.toLowerCase() === "saturday") {
     console.log("The next day is sunday")
 }
-else if (day === "sunday") {
-    console.log("The next day is monday")
+else if (day.toLowerCase() === "sunday") {
+    console.log("The next day is monda")
 }
 else {
     console.log("That's not a day of the week")
