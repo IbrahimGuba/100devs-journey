@@ -7,4 +7,8 @@ function sayHello(firstName, lastName) {
 }
 
 // TODO: ask user for first and last name
+let firstName = prompt("What is your First Name")
+let lastName = prompt("What is your Last Name")
+
 // TODO: call sayHello() and show its result
+console.log(sayHello(firstName, lastName))
