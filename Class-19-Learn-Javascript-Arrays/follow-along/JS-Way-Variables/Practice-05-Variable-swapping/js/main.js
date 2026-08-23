@@ -10,3 +10,9 @@ console.log(number2); // Should show 5
 
 // Add the necessary code to swap the values of variables number1 and number2.
 
+let swap = number1
+number1 = number2
+number2 = swap
+
+console.log(number1); // 3
+console.log(number2); // 5
