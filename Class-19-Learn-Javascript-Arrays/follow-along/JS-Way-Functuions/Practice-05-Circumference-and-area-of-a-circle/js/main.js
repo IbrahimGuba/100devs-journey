@@ -7,6 +7,15 @@ Circumference and area calculation formulas should be part of your secondary sch
 The value of number π (Pi) is obtained with Math.PI in JavaScript.
 You might want to use the exponentiation operator ** to perform computations.
 */
+// C = 2 * Pi * r
+function circumference(radius) {
+    return 2 * Math.PI * radius
+}
+
+// A = Pi * r^2
+function area(radius) {
+    return Math.PI * radius ** 2
+}
 
 console.log(2 ** 3); // 8: 2 * 2 * 2
 console.log(3 ** 2); // 9: 3 * 3
