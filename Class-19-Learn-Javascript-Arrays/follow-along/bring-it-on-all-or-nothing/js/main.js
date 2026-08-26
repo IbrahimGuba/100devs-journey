@@ -1,6 +1,6 @@
 // *Variables*
 // Declare a variable, assign it a boolean, and alert the value
-let myVar = "true"
+let myVar = true
 alert(myVar)
 
 // Declare a variable, reassign it to your favorite color, and console log the value
@@ -18,8 +18,10 @@ console.log(take4(2,3,4,2))
 
 // Create a function that takes in 2 numbers. Console log the first number to the power of the second. Call the function.
 function take2(a,b) {
-    console.log(Math.pow(2,3))
+    console.log(Math.pow(a,b))
 }
+
+take2(2,3)
 
 // *Conditionals*
 // Create a function that takes in a boolean and a string. If the boolean is true, alert the string. If the boolean is false, console log the string
@@ -30,6 +32,9 @@ function boolAndString(bool, str) {
         console.log(str)
     }
 }
+
+boolAndString(true,"A true string")
+boolAndString(false,"A false string")
 
 
 //*Loops*
