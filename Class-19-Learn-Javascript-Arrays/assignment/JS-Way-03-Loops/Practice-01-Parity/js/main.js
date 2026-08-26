@@ -13,8 +13,13 @@ console.log(11 % 2); // 1 because 11 = 5 * 2 + 1
 console.log(18 % 3); // 0 because 18 = 3 * 6 + 0
 console.log(19 % 3); // 1 because 19 = 3 * 6 + 1
 console.log(20 % 3); // 2 because 20 = 3 * 6 + 2
-
+console.log("\nImproved Program")
 // Improve the program so that it also shows odd numbers. Improve it again to replace the initial number 1 by a number given by the user.
 
-// Improve the program so that it also shows odd numbers. Improve it again to replace the initial number 1 by a number given by the user.
-
+for (let i = Number(prompt("Enter a number between 1-10")); i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(`${i} is even`);
+  } else {
+    console.log(`${i} is odd`);
+  }
+}
