@@ -15,5 +15,6 @@ const circle = {
     }
 };
 
+// Comment to fix commit message
 console.log(`Its circumference is ${circle.circumference()}`);
 console.log(`Its area is ${circle.area()}`);
