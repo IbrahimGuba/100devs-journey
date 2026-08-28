@@ -1,20 +1,8 @@
-// Write a program that creates the following array, then calculates and shows the array's maximum value.
-const values = [3, 11, 7, 2, 9, 10];
+// Complete the following program to add the circle object definition. Its radius value is input by the user.
 
-let max = values[0];
+const r = Number(prompt("Enter the circle radius:"));
 
-for (let i = 0; i < values.length; i++) {
-    if (values[i] > max) {
-        max = values[i];
-    }
-}
+// TODO: create the circle object here
 
-console.log(max);
-
-// OR
-
-const values = [3, 11, 7, 2, 9, 10];
-
-const max = Math.max(...values);
-
-console.log(max);
+console.log(`Its circumference is ${circle.circumference()}`);
+console.log(`Its area is ${circle.area()}`);

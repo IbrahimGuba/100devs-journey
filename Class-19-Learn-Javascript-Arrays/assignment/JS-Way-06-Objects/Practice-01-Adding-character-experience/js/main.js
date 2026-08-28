@@ -1,23 +1,14 @@
-let musketeers = ["Athos", "Porthos", "Aramis"]
+// Improve our example RPG program to add an experience property named xp to the character. Its initial value is 0. Experience must appear in character description.
 
-console.log("Using a standard for loop:")
-for (i = 0; i < musketeers.length; i++) {
-    console.log(musketeers[i])
-}
+// TODO: create the character object here
 
-// Add This Guy
-musketeers.push("D'Artagnan")
+// Aurora is harmed by an arrow
+aurora.health -= 20;
 
-console.log("\nUsing forEach:")
-musketeers.forEach(musketeer => {
-    console.log(musketeer);
-})
+// Aurora equips a strength necklace
+aurora.strength += 10;
 
-// Remove Aramis
-musketeers.splice(2,1)
+// Aurora learn a new skill
+aurora.xp += 15;
 
-console.log("\nUsing for...of:")
-for (let musketeer of musketeers) {
-    console.log(musketeer)
-}
-
+console.log(aurora.describe());
