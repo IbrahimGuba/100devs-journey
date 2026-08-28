@@ -1,0 +1,567 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: "";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+/* Reusable Page alignment */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1, h3 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+/* Centered h2 */
+h2 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+p, a, span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centered Span */
+.highlight {  
+  padding-top: 60px;      
+  color: #ff8800;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ======================== Navbar & Hero ============================== */
+nav {
+  overflow: auto;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 30%;
+}
+
+.nav-links {
+  float: right;
+  width: 70%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2A4054;
+}
+
+.new-hero {
+  background-image:url(../images/hero-bg.jpg);
+  background-size: cover;
+  min-height: 500px; 
+  background-repeat: no-repeat;
+  padding: 0 0 250px 0;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: left;
+}
+
+form .search {
+  float: left;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-right: none; 
+  width: 480px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color:#ff8800
+}
+
+form .btn {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  background: #ff8800;
+  border-radius: 0 5px 5px 0;
+  float: left;
+  border: 0;
+}
+
+form .btn:hover {
+  background: orangered;
+}
+
+.socials {
+  color: #ff8800;
+  margin-top: 30px;
+  
+}
+
+.socials i {
+  font-size: 1.1rem;          
+  margin-right: 6px;
+}
+
+.socials > span {
+  color: black;
+  font-weight: 500;
+  margin-right: 50px;
+}
+
+/* ======================== About Us Section ============================== */
+.about-us {
+    background:
+    linear-gradient( to right,
+      rgba(255,255,255,0.1) 15%,
+      rgba(255,255,255,0.95) 35%,
+      rgba(255,255,255,0.95) 65%,
+      rgba(255,255,255,0.1) 85% ),
+    url(../images/about-us-fused.png);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.about-us-text {
+  float: right;
+  width: 80%;
+  padding: 100px 0;
+}
+
+.about-us-text > span {
+  color: #ff8800;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+.about-us .first, 
+.about-us .second {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.about-us .second {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-us .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  background-color: #ff8800;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about-us .btn-arrow{
+  display: inline-block;
+  background-color:#ffaa4d;
+  padding: 15px;
+}
+
+.about-us .btn-text {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+/* ======================== Menu Section ============================== */
+.menu {
+  background-color: #f2f6f7;
+}
+
+.menu-categories {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.menu-categories ul {
+  display: inline-block;
+  padding: 0;
+  border-bottom: 2px solid #e1e5e6;
+}
+
+.menu-categories li {
+  display: inline-block;
+  padding: 10px 30px;
+  list-style: none;
+}
+
+.menu-categories a {
+  text-decoration: none;
+  color: #2A4054;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-grid {
+  width: 100%;
+}
+
+.menu-card {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+.menu-categories .active a {
+  color: #ff8800;
+  font-weight: 600;
+  position: relative; 
+}
+
+.menu-categories .active {
+  position: relative;
+}
+
+.menu-categories .active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #ff8800;
+  transform: translateX(-50%);
+}
+
+.menu-card.featured {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.menu-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.menu-card.featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.item-info {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.item-info h3 {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: white;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.rating {
+  color: #ff8800;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.star {
+  margin-right: 2px;
+}
+
+.title {
+  font-size: 1.75em;
+}
+
+.order-now {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.page-dots {
+  text-align: center;
+  padding: 30px; 
+}
+
+.page-dots button {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #ffdbb2;
+  margin: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.page-dots .active {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #ff8800;
+}
+
+/* ======================== Opening Hours Section ============================== */
+.opening-hours {
+  background: #f8f8f8;
+  text-align: center;
+  position: relative;
+  padding: 0 0 50px 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.85), 
+    rgba(255, 255, 255, 0.85)),
+    url(../images/opening-hours-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  min-height: 100vh
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  font-size: 30px;
+  color: orange;
+  margin: 40px 0 10px 0;
+}
+
+.phone-box p {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.phone-box h3 {
+  color:#ff8800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.phone-box h3 {
+  color:#ff8800;
+  font-size: 2rem;
+}
+
+.schedule-wrapper {
+  width: 75%;
+  margin: 40px auto 60px;
+}
+
+.schedule-left {
+  float: left;
+  width: 50%;
+}
+
+.schedule-right {
+  float: right;
+  width: 50%;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.image-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.left-btn {
+  float: left;
+  width: 5%;
+}
+
+.right-btn {
+  float: right;
+  width: 5%;
+}
+
+.food-image {
+  float: left;
+  width: 90%;
+  position: relative;
+}
+
+.food-image img {
+  object-fit: cover;
+  width: 800px;
+  height: 400px;
+  object-position: 70% 80%;
+}
+
+.left-btn,
+.right-btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f9a826;
+  border-radius: 50%;
+  color: #f9a826;
+  background: rgba(0, 0, 0, 0.25%);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.left-btn {
+  float: left;
+  margin-top: 180px;
+}
+
+.right-btn {
+  float: right;
+  margin-top: 180px;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+  background: #f9a826;
+  color: white;
+}
+
+.play-btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f9a826;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    color: #f9a826;
+    font-size: 28px;
+    text-align: center;
+    line-height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-btn:hover {
+  background: #f9a826;
+  color:white;
+}
+/* ======================== Testimonials Section ============================== */
+.testimonials {
+  background: #f8f8f8;
+  padding: 80px 0;
+}
+
+.testimonial-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.testimonial-card {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.customer-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.testimonial-card h3 {
+  font-size: 36px;
+  margin: 20px 0 5px;
+}
+
+.role {
+  color: #999;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.review {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 20px;
+  color: #666;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
