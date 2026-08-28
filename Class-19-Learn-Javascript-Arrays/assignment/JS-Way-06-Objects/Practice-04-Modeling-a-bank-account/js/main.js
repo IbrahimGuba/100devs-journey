@@ -7,3 +7,22 @@ A credit method adding the (positive or negative) value passed as an argument to
 A describe method returning the account description.
 Use this object to show its description, crediting 250, debiting 80, then show its description again.
 */
+
+const account = {
+    name: "Alex",
+    balance: 0, 
+
+    credit(value) {
+        this.balance += value;
+    },
+
+    describe() {
+        return `Account Name: ${this.name} \nBalance: ${this.balance}`
+    }
+}
+
+console.log(account.describe())
+
+account.credit(250)
+account.credit(-80)
+console.log(account.describe())
