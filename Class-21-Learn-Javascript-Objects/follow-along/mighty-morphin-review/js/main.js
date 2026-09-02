@@ -32,11 +32,20 @@ bigThree(3,6,9)
 // *Conditionals*
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
 function headsOrTails() {
-    const flip = ['Heads', 'Tails']
-    return flip[Math.round(Math.random())]
+    const flip = Math.round(Math.random())
+
+    if (flip < .5) {
+        return 'Heads'
+    } else {
+        return 'Tails'
+    }
+
 }
 
-// console.log(headsOrTails())
+// One Line
+// let headsOrTails = (flip) => .5 ? 'Heads' : 'Tails'
+
+console.log(headsOrTails())
 
 //*Loops*
 //Create a function that takes in a number. Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
