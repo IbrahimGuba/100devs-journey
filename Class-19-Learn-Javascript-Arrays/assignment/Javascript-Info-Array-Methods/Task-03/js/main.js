@@ -1,30 +1,3 @@
-//Translate border-left-width to borderLeftWidth
-//Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
-
-function camelize(str) {
-    return str
-        .split('-')  // splits 'my-long-word' into array ['my', 'long', 'word']
-        .map((word, index) => index == 0 ? word : word[0]).toUpperCase() + word.slice(1)
-        // If index is 0, i,e first word return that word, else return the first character of that word at uppercase + copy characters from index 1 of the string onwards
-        .join('')
-}
-
-// console.log(camelize("background-color"))
-
-//Filter Range
-//Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array. | The function should not modify the array. It should return the new array. |
-
-function filterRange(arr, a, b) {
-    return arr.filter(item => (a <= item && item <= b));
-
-}
-
-let arr = [5, 3, 8, 1];
-
-let filtered = filterRange(arr, 1, 4);
-
-// alert( filtered ); alert( arr ); 
-
 //Filter range "in place"
 //Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b | The function should only modify the array. It should not return anything. |
 
